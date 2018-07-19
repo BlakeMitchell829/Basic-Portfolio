@@ -2,10 +2,13 @@
 /**
  * Portfolio Activity
  **/
-
+html,body{
+    padding: 0;
+    margin: 0;
+}
 
 header {
-    width: 50%;
+    width: 100%;
     height: 100;
     border: #cccccc;    
     background-color: #ffffff;
@@ -14,19 +17,22 @@ header {
     position: fixed;   
     font-family: Helvetica;
 }
-h1{
+.logo{
     font-family: Georgia;
     background-color: #4aaaa5;
     color: #ffffff;
     margin: 10px;
     padding: 20px;
+    float:left;
+    position: fixed;
 }
-#nav a{
+nav a{
     color: #fff;
     text-decoration: none;
     padding: 7px 25px;
     display: inline-block;
     color: #777777;
+    float: right;
 }
 
 nav #{
@@ -46,8 +52,11 @@ body {
     color: #777777;  
     width: 960px;
     height: 960px;
-    padding: 960px; 
-    background: url(https://www.toptal.com/designers/subtlepatterns/patterns/dust_scratches.zip);
+    margin: 0 auto; 
+    background-image: url('/assets/dust_scratches/dust_scratches.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:lightcyan;
    }
 #image1{
     float: left;
